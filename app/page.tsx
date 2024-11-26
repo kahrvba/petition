@@ -58,7 +58,7 @@ export default function Home() {
       {/* Goals Section */}
       <section className="py-12 px-4">
         <h2 className="text-3xl text-black font-bold text-center mb-6">Our Goals for Fair Compensation</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {/* Goal Card 1 */}
           <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg">
             <h3 className="text-xl text-black font-bold mb-2">Fair Salary Adjustment</h3>
@@ -102,10 +102,13 @@ export default function Home() {
                 name="costOfLiving"
                 checked={form.goals.costOfLiving}
                 onChange={handleChange}
-                className="mr-2 mt-7"
+                className="mr-2"
               />
               <label className="text-black">Support this goal</label>
             </div>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+
           </div>
         </div>
       </section>
@@ -120,9 +123,10 @@ export default function Home() {
               required
               type="text"
               name="name"
+              placeholder="Name And Surname"
               value={form.name}
               onChange={handleChange}
-              className="w-full p-3 border text-black border-[black] rounded-lg"
+              className="w-full p-3 border text-black border-[black] rounded-lg placeholder:italic placeholder:text-slate-400 focus:outline-none focus:border-sky-500 focus:ring-1 "
             />
           </div>
           <div>
@@ -131,9 +135,11 @@ export default function Home() {
               required
               type="text"
               name="department"
+              placeholder="Depatment"
               value={form.department}
               onChange={handleChange}
-              className="w-full p-3 text-black border border-[black] rounded-lg"
+              className="w-full p-3 text-black border border-[black] rounded-lg placeholder:italic placeholder:text-slate-400 focus
+              "
             />
           </div>
           <div>
