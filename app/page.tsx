@@ -90,13 +90,15 @@ export default function Home() {
             {/* Goal Card 1 */}
             <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg">
               <h3 className="text-xl text-black font-bold mb-2">Fair Salary Adjustment</h3>
-              <p className="text-gray-600">Increase our salary to meet the minimum living standards in Northern Cyprus.</p>
+              <p className="text-gray-600">Increase our salary to meet the minimum living standards in Northern
+                Cyprus.</p>
             </div>
 
             {/* Goal Card 2 */}
             <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg">
               <h3 className="text-xl text-black font-bold mb-2">Workload Recognition and Equality</h3>
-              <p className="text-gray-600">Salary Adjustment to recognize the full-time contributions of the Assistants.</p>
+              <p className="text-gray-600">Salary Adjustment to recognize the full-time contributions of the
+                Assistants.</p>
             </div>
 
             {/* Goal Card 3 */}
@@ -110,7 +112,8 @@ export default function Home() {
               <div>
                 <h3 className="text-xl text-black font-bold mb-2">Download the Petition</h3>
                 <p className="text-gray-600">
-                  Get a copy of the petition to share with others or for your reference. Click below to download the PDF.
+                  Get a copy of the petition to share with others or for your reference. Click below to download the
+                  PDF.
                 </p>
               </div>
               <div className="mt-auto pt-4">
@@ -139,6 +142,7 @@ export default function Home() {
                   required
                   type="text"
                   name="name"
+                  aria-label="Full Name"
                   placeholder="Name And Surname"
                   value={form.name}
                   onChange={handleChange}
@@ -224,6 +228,21 @@ export default function Home() {
             </button>
           </form>
         </section>
+        <footer className="bg-gray-800 text-white py-4">
+          <div className="container mx-auto text-center">
+            <p className="text-sm">
+              Powered by
+              <a href="https://github.com/kahrvba" target="_blank" className="text-blue-400 hover:underline p-1">
+                Ahmed
+              </a>
+            </p>
+            <p className="text-sm mt-2">
+              For any issues, please <a href="mailto:ahmedsalah998.as@gmail.com?subject=Website%20Issue%20Report" className="text-blue-400 hover:underline">report
+              here</a>.
+            </p>
+          </div>
+        </footer>
+
       </div>
   );
 }
