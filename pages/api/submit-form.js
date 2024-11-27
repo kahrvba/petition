@@ -1,5 +1,5 @@
 import * as validator from 'validator';
-import { appendToGoogleSheet } from '../lib/google'; // Adjusted path to the lib folder
+import { appendToGoogleSheet } from '../../lib/google'; // Adjusted path to the lib folder
 
 export default async function handler(req, res) {
     if (req.method === 'POST') {
